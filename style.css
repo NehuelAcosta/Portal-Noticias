@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header div * {
+    margin: 0;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+#clima p {
+    font-size: 13px;
+    color: purple;
+    font-weight: bold;
+}
+
+#title {
+    font-size: 35px;
+    color: darkblue;
+}
+
+nav {
+    display: flex;
+    background-color: rgb(185, 2, 185);
+    justify-content: space-between;
+}
+
+nav * {
+    color: white;
+    margin: 0;
+}
+
+nav #genres {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.2rem 0 0.2rem 0.5rem;
+}
+
+#search {
+    display: flex;
+    padding: 0.5rem;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+main {
+    margin: 3rem 3rem 0 3rem;
+}
+
+#noticias {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 1rem;
+    grid-template-areas: 
+
+        'img1 img1 vacio img2'
+        'img1 img1 vacio img2'
+        'img1 img1 img3 img3'
+        'img1 img1 img3 img3'
+        'img5 img6 img4 img4'
+        'text1 text2 img4 img4'
+}
+
+#noticias img {
+    height: 100%;
+    width: 100%;
+}
+
+#vacio {
+    grid-area: vacio;
+}
+
+#img1 {
+    grid-area: img1;
+}
+
+#img2 {
+    grid-area: img2;
+}
+
+#img3 {
+    grid-area: img3;
+}
+
+#img4 {
+    grid-area: img4;
+}
+
+#img5 {
+    grid-area: img5;
+}
+
+#img6 {
+    grid-area: img6;
+}
+
+#text1 {
+    grid-area: text1;
+}
+
+#text2 {
+    grid-area: text2;
+}
+
+.text {
+    margin: 0 1rem 0 1rem;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+hr {
+    border: 2px solid black;
+    margin-bottom: 2rem;
+}
+
+#articulos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    grid-template-areas: 
+
+        'articulo1 articulo2 articulo3 articulo4'
+        'articulo1 articulo2 articulo3 articulo4'
+}
+
+.articulo {
+    border: 1px solid gray;
+}
+
+.articulo img {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.categoria {
+    margin: 2rem 1rem 0.2rem 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
+    color: gray;
+}
