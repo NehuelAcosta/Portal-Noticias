@@ -70,12 +70,13 @@ main {
         'img1 img1 img3 img3'
         'img1 img1 img3 img3'
         'img5 img6 img4 img4'
-        'text1 text2 img4 img4'
+        'text1 text2 img4 img4';
 }
 
 #noticias img {
     height: 100%;
     width: 100%;
+    z-index: -1;
 }
 
 #vacio {
